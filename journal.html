@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Small, useful notes for the life you share with your pet." />
+    <title>Journal — Maopapa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'] }, colors: { ink: '#282521', oat: '#F5F2EC', clay: '#8A725B', mist: '#DED8CF' } } }
+      };
+    </script>
+  </head>
+  <body class="bg-oat font-sans text-ink antialiased">
+    <!-- A compact editorial module that can live beside the existing shop pages. -->
+    <header class="border-b border-stone-300/70 bg-oat/95">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5 lg:px-8">
+        <a href="index.html" class="text-lg font-semibold tracking-[0.18em]">MAOPAPA</a>
+        <nav class="hidden gap-7 text-sm text-stone-600 md:flex" aria-label="Main navigation">
+          <a class="transition hover:text-ink" href="essentials.html">Essentials</a>
+          <a class="font-medium text-ink" href="journal.html">Journal</a>
+          <a class="transition hover:text-ink" href="about.html">Our story</a>
+          <a class="transition hover:text-ink" href="faq.html">FAQ</a>
+        </nav>
+        <a href="essentials.html" class="rounded-full border border-stone-400 px-4 py-2 text-xs font-medium transition hover:bg-ink hover:text-white">Shop essentials</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="mx-auto max-w-6xl px-6 pb-12 pt-16 lg:px-8 lg:pb-16 lg:pt-24">
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-clay">The Maopapa journal</p>
+        <div class="mt-5 max-w-2xl">
+          <h1 class="text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">Thoughtful notes for everyday pet life.</h1>
+          <p class="mt-5 max-w-xl text-base leading-7 text-stone-600">Small rituals, calmer rooms, and simple objects that make the shared parts of home feel considered.</p>
+        </div>
+      </section>
+
+      <section class="border-y border-stone-300/70 bg-white/45">
+        <div class="mx-auto max-w-6xl px-6 py-5 lg:px-8">
+          <div class="flex gap-2 overflow-x-auto" role="group" aria-label="Filter journal articles">
+            <button class="filter-button rounded-full bg-ink px-4 py-2 text-sm font-medium text-white" data-filter="all" aria-pressed="true">All notes</button>
+            <button class="filter-button rounded-full border border-stone-300 px-4 py-2 text-sm text-stone-600 transition hover:border-stone-500" data-filter="feeding" aria-pressed="false">Feeding</button>
+            <button class="filter-button rounded-full border border-stone-300 px-4 py-2 text-sm text-stone-600 transition hover:border-stone-500" data-filter="rest" aria-pressed="false">Rest &amp; home</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-6xl px-6 py-14 lg:px-8 lg:py-20">
+        <div class="grid gap-8 md:grid-cols-3">
+          <article class="journal-card group" data-category="feeding">
+            <a href="essentials.html" class="block">
+              <div class="aspect-[4/5] overflow-hidden bg-[#DDD4C6]">
+                <img class="h-full w-full object-cover transition duration-500 group-hover:scale-105" src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=900&q=80" alt="A small dog resting beside a food bowl" />
+              </div>
+              <p class="mt-5 text-xs font-semibold uppercase tracking-[0.18em] text-clay">Feeding · 4 min read</p>
+              <h2 class="mt-3 text-xl font-semibold tracking-tight">A calmer way to begin the meal.</h2>
+              <p class="mt-3 text-sm leading-6 text-stone-600">Why a little quiet, a steady surface, and a thoughtful press can change the feeling of a daily ritual.</p>
+              <span class="mt-5 inline-block text-sm font-medium underline decoration-stone-400 underline-offset-4">Read note</span>
+            </a>
+          </article>
+
+          <article class="journal-card group" data-category="rest">
+            <a href="essentials.html" class="block">
+              <div class="aspect-[4/5] overflow-hidden bg-[#D8D3CA]">
+                <img class="h-full w-full object-cover transition duration-500 group-hover:scale-105" src="https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?auto=format&fit=crop&w=900&q=80" alt="A sleepy cat in a soft neutral bed" />
+              </div>
+              <p class="mt-5 text-xs font-semibold uppercase tracking-[0.18em] text-clay">Rest &amp; home · 3 min read</p>
+              <h2 class="mt-3 text-xl font-semibold tracking-tight">Make room for their favourite corner.</h2>
+              <p class="mt-3 text-sm leading-6 text-stone-600">A few practical ways to create a resting spot that belongs to them and still feels at home in yours.</p>
+              <span class="mt-5 inline-block text-sm font-medium underline decoration-stone-400 underline-offset-4">Read note</span>
+            </a>
+          </article>
+
+          <article class="journal-card group" data-category="feeding">
+            <a href="essentials.html" class="block">
+              <div class="aspect-[4/5] overflow-hidden bg-[#CFC5B7]">
+                <img class="h-full w-full object-cover transition duration-500 group-hover:scale-105" src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=900&q=80" alt="A dog looking toward a bowl in a bright room" />
+              </div>
+              <p class="mt-5 text-xs font-semibold uppercase tracking-[0.18em] text-clay">Feeding · 3 min read</p>
+              <h2 class="mt-3 text-xl font-semibold tracking-tight">The everyday case for a good bowl.</h2>
+              <p class="mt-3 text-sm leading-6 text-stone-600">The small details we look for in an object that is out in the open, morning and night.</p>
+              <span class="mt-5 inline-block text-sm font-medium underline decoration-stone-400 underline-offset-4">Read note</span>
+            </a>
+          </article>
+        </div>
+        <p id="empty-state" class="mt-10 hidden text-center text-sm text-stone-600">More notes are on their way.</p>
+      </section>
+
+      <section class="border-t border-stone-300/70 bg-[#DED8CF]">
+        <div class="mx-auto flex max-w-6xl flex-col items-start justify-between gap-6 px-6 py-12 lg:flex-row lg:items-center lg:px-8">
+          <div><p class="text-xs font-semibold uppercase tracking-[0.2em] text-clay">Keep in touch</p><h2 class="mt-2 text-2xl font-semibold tracking-tight">For people who make room for paws.</h2></div>
+          <a href="essentials.html" class="rounded-full bg-ink px-5 py-3 text-sm font-medium text-white transition hover:bg-stone-700">Explore essentials</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="mx-auto flex max-w-6xl flex-col gap-3 px-6 py-8 text-xs text-stone-500 sm:flex-row sm:justify-between lg:px-8"><span>© 2026 Maopapa</span><a class="hover:text-ink" href="faq.html">Questions? Visit FAQ</a></footer>
+
+    <script>
+      // Editorial filters stay intentionally small and work without a framework.
+      const buttons = document.querySelectorAll('.filter-button');
+      const cards = document.querySelectorAll('.journal-card');
+      const emptyState = document.getElementById('empty-state');
+      buttons.forEach((button) => button.addEventListener('click', () => {
+        const filter = button.dataset.filter;
+        let visible = 0;
+        cards.forEach((card) => {
+          const show = filter === 'all' || card.dataset.category === filter;
+          card.classList.toggle('hidden', !show);
+          if (show) visible += 1;
+        });
+        emptyState.classList.toggle('hidden', visible !== 0);
+        buttons.forEach((item) => {
+          const active = item === button;
+          item.setAttribute('aria-pressed', active);
+          item.classList.toggle('bg-ink', active); item.classList.toggle('text-white', active);
+          item.classList.toggle('border', !active); item.classList.toggle('border-stone-300', !active); item.classList.toggle('text-stone-600', !active);
+        });
+      }));
+    </script>
+  </body>
+</html>
