@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="PurrPress Bloom™ — a quiet daily feeding essential for cats and dogs." />
+    <title>PurrPress Bloom™ — Maopapa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config={theme:{extend:{fontFamily:{sans:['Inter','sans-serif']},colors:{ink:'#282521',oat:'#F5F2EC',clay:'#8A725B',mist:'#DED8CF'}}}};</script>
+  </head>
+  <body class="bg-oat font-sans text-ink antialiased">
+    <header class="border-b border-stone-300/70">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5 lg:px-8">
+        <a href="index.html" class="text-lg font-semibold tracking-[0.18em]">MAOPAPA</a>
+        <nav class="hidden gap-7 text-sm text-stone-600 md:flex" aria-label="Main navigation"><a href="essentials.html" class="text-ink">Essentials</a><a href="journal.html" class="hover:text-ink">Journal</a><a href="about.html" class="hover:text-ink">Our story</a><a href="faq.html" class="hover:text-ink">FAQ</a></nav>
+        <button id="bag-link" class="text-sm font-medium underline decoration-stone-400 underline-offset-4">Bag <span id="bag-count">0</span></button>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-6xl px-6 py-8 lg:px-8 lg:py-12">
+      <a href="essentials.html" class="text-sm text-stone-600 underline decoration-stone-400 underline-offset-4">← Back to essentials</a>
+      <div class="mt-8 grid gap-10 lg:grid-cols-[1.08fr_.92fr] lg:gap-16">
+        <section class="grid gap-4 sm:grid-cols-2" aria-label="PurrPress Bloom product images">
+          <div class="aspect-[4/5] overflow-hidden bg-[#DED8CF] sm:col-span-2"><img class="h-full w-full object-cover" src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=1400&q=85" alt="A small dog beside a calm feeding area" /></div>
+          <div class="aspect-square overflow-hidden bg-[#D6CEC2]"><img class="h-full w-full object-cover" src="https://images.unsplash.com/photo-1591769225440-811ad7d6eab0?auto=format&fit=crop&w=900&q=80" alt="A cat relaxing at home" /></div>
+          <div class="flex aspect-square items-end bg-[#C5B9AA] p-7"><p class="max-w-40 text-xl font-semibold leading-tight text-white">A small press for a more settled mealtime.</p></div>
+        </section>
+
+        <section class="lg:pt-6">
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-clay">Daily feeding</p>
+          <h1 class="mt-3 text-4xl font-semibold tracking-tight sm:text-5xl">PurrPress Bloom™</h1>
+          <p class="mt-4 text-xl text-stone-600">$28.00</p>
+          <p class="mt-7 max-w-lg text-base leading-7 text-stone-600">A simple, hand-held press for portioning soft food into a neat bloom. Designed to make the familiar routine feel quieter, cleaner, and a little more considered.</p>
+
+          <div class="mt-9 border-y border-stone-300/80 py-6">
+            <p class="text-sm font-medium">Choose a finish</p>
+            <div class="mt-3 flex gap-3" role="group" aria-label="Choose product finish">
+              <button class="finish rounded-full border border-ink bg-ink px-4 py-2 text-sm text-white" data-finish="Oat">Oat</button>
+              <button class="finish rounded-full border border-stone-300 px-4 py-2 text-sm text-stone-600" data-finish="Stone">Stone</button>
+              <button class="finish rounded-full border border-stone-300 px-4 py-2 text-sm text-stone-600" data-finish="Clay">Clay</button>
+            </div>
+          </div>
+
+          <div class="mt-6 flex items-center gap-3">
+            <div class="flex h-12 items-center rounded-full border border-stone-300 bg-white/50">
+              <button id="decrease" class="h-full w-11 text-lg" aria-label="Decrease quantity">−</button>
+              <span id="quantity" class="w-7 text-center text-sm" aria-live="polite">1</span>
+              <button id="increase" class="h-full w-11 text-lg" aria-label="Increase quantity">+</button>
+            </div>
+            <button id="add-to-bag" class="h-12 flex-1 rounded-full bg-ink px-6 text-sm font-medium text-white transition hover:bg-stone-700">Add to bag — $28.00</button>
+          </div>
+          <p id="bag-message" class="mt-3 hidden text-sm text-clay" role="status">Added to your bag.</p>
+
+          <dl class="mt-10 divide-y divide-stone-300/80 border-y border-stone-300/80 text-sm">
+            <div class="flex justify-between gap-6 py-4"><dt class="font-medium">Made for</dt><dd class="text-right text-stone-600">Cats &amp; small-to-medium dogs</dd></div>
+            <div class="flex justify-between gap-6 py-4"><dt class="font-medium">Care</dt><dd class="text-right text-stone-600">Wipe clean after use</dd></div>
+            <div class="flex justify-between gap-6 py-4"><dt class="font-medium">Shipping</dt><dd class="text-right text-stone-600">Complimentary over $60</dd></div>
+          </dl>
+        </section>
+      </div>
+
+      <section class="mt-20 border-t border-stone-300/70 pt-14 lg:mt-28">
+        <div class="grid gap-8 md:grid-cols-3"><div><p class="text-xs font-semibold uppercase tracking-[0.18em] text-clay">01</p><h2 class="mt-3 text-lg font-semibold">Press with ease</h2><p class="mt-2 text-sm leading-6 text-stone-600">A comfortable form for the small movements that happen every day.</p></div><div><p class="text-xs font-semibold uppercase tracking-[0.18em] text-clay">02</p><h2 class="mt-3 text-lg font-semibold">Keep the ritual tidy</h2><p class="mt-2 text-sm leading-6 text-stone-600">A considered way to prepare soft food with less fuss at the counter.</p></div><div><p class="text-xs font-semibold uppercase tracking-[0.18em] text-clay">03</p><h2 class="mt-3 text-lg font-semibold">Leave it out</h2><p class="mt-2 text-sm leading-6 text-stone-600">Neutral finishes that sit quietly with the rest of your home.</p></div></div>
+      </section>
+    </main>
+
+    <footer class="border-t border-stone-300/70 px-6 py-8 text-center text-xs text-stone-500">© 2026 Maopapa · Made for the life you share.</footer>
+    <script>
+      // Product-page interactions: finish selection, quantity limits, and bag confirmation.
+      let quantity = 1;
+      const quantityLabel = document.getElementById('quantity');
+      const bagCount = document.getElementById('bag-count');
+      document.getElementById('decrease').addEventListener('click', () => { quantity = Math.max(1, quantity - 1); quantityLabel.textContent = quantity; });
+      document.getElementById('increase').addEventListener('click', () => { quantity += 1; quantityLabel.textContent = quantity; });
+      document.querySelectorAll('.finish').forEach((button) => button.addEventListener('click', () => { document.querySelectorAll('.finish').forEach((item) => item.className='finish rounded-full border border-stone-300 px-4 py-2 text-sm text-stone-600'); button.className='finish rounded-full border border-ink bg-ink px-4 py-2 text-sm text-white'; }));
+      document.getElementById('add-to-bag').addEventListener('click', () => { bagCount.textContent = quantity; document.getElementById('bag-message').classList.remove('hidden'); });
+      document.getElementById('bag-link').addEventListener('click', () => document.getElementById('bag-message').classList.remove('hidden'));
+    </script>
+  </body>
+</html>
