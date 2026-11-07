@@ -85,8 +85,9 @@
             <a href="#shop" class="mt-9 inline-flex w-fit items-center gap-3 border-b border-ink pb-2 text-xs font-semibold tracking-[0.12em] transition hover:border-clay hover:text-clay">SHOP THE EDIT <span aria-hidden="true">→</span></a>
           </div>
           <div id="hero-carousel" class="relative min-h-[360px] overflow-hidden sm:min-h-[470px] lg:min-h-full" aria-roledescription="carousel" aria-label="Cats and dogs at home">
-            <div class="hero-slide is-active absolute inset-0" data-hero-slide aria-hidden="false"><img class="hero-image h-full w-full object-cover" src="assets/hero-dog-v2.jpg" alt="Golden retriever resting in a linen bed in a warm, minimal home" /></div>
-            <div class="hero-slide absolute inset-0" data-hero-slide aria-hidden="true"><img class="hero-image h-full w-full object-cover" src="assets/hero-cat-v2.jpg" alt="Grey and white cat sitting beside a ceramic bowl in a warm, minimal home" /></div>
+            <!-- Versioned URLs ensure visitors receive the current hero assets after an image refresh. -->
+            <div class="hero-slide is-active absolute inset-0" data-hero-slide aria-hidden="false"><img class="hero-image h-full w-full object-cover" src="assets/hero-dog-v2.jpg?v=2" alt="Golden retriever resting in a linen bed in a warm, minimal home" /></div>
+            <div class="hero-slide absolute inset-0" data-hero-slide aria-hidden="true"><img class="hero-image h-full w-full object-cover" src="assets/hero-cat-v2.jpg?v=2" alt="Grey and white cat sitting beside a ceramic bowl in a warm, minimal home" /></div>
             <div class="absolute bottom-5 left-5 z-10 flex gap-2"><button class="hero-dot h-2 w-7 bg-white" type="button" data-hero-to="0" aria-label="Show dog image" aria-current="true"></button><button class="hero-dot h-2 w-7 border border-white/80 bg-transparent" type="button" data-hero-to="1" aria-label="Show cat image" aria-current="false"></button></div>
             <button id="hero-next" class="absolute bottom-4 right-4 z-10 grid h-10 w-10 place-items-center rounded-full bg-cream/90 text-lg text-ink transition hover:bg-cream" type="button" aria-label="Next image">→</button>
           </div>
