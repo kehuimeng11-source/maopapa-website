@@ -54,11 +54,25 @@
           </div>
           <p id="bag-message" class="mt-3 hidden text-sm text-clay" role="status">Added to your bag.</p>
 
-          <dl class="mt-10 divide-y divide-stone-300/80 border-y border-stone-300/80 text-sm">
-            <div class="flex justify-between gap-6 py-4"><dt class="font-medium">Made for</dt><dd class="text-right text-stone-600">Cats &amp; small-to-medium dogs</dd></div>
-            <div class="flex justify-between gap-6 py-4"><dt class="font-medium">Care</dt><dd class="text-right text-stone-600">Wipe clean after use</dd></div>
-            <div class="flex justify-between gap-6 py-4"><dt class="font-medium">Shipping</dt><dd class="text-right text-stone-600">Complimentary over $60</dd></div>
-          </dl>
+          <!-- Purchase details are available beside the CTA without turning the product page into a long wall of copy. -->
+          <section class="mt-10 border-y border-stone-300/80" aria-label="Product details">
+            <details class="group border-b border-stone-300/80 py-4" open>
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-6 text-sm font-medium">Made for <span class="text-lg font-normal text-clay transition group-open:rotate-45" aria-hidden="true">+</span></summary>
+              <p class="max-w-lg pt-3 text-sm leading-6 text-stone-600">For cats and small-to-medium dogs enjoying soft food. The easy-grip form supports a calmer, cleaner portioning ritual.</p>
+            </details>
+            <details class="group border-b border-stone-300/80 py-4">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-6 text-sm font-medium">Materials &amp; size <span class="text-lg font-normal text-clay transition group-open:rotate-45" aria-hidden="true">+</span></summary>
+              <p class="max-w-lg pt-3 text-sm leading-6 text-stone-600">Food-safe, easy-clean composite in a compact hand-held format. Designed to store neatly in a kitchen drawer or sit out beside the feeding area.</p>
+            </details>
+            <details class="group border-b border-stone-300/80 py-4">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-6 text-sm font-medium">Care <span class="text-lg font-normal text-clay transition group-open:rotate-45" aria-hidden="true">+</span></summary>
+              <p class="max-w-lg pt-3 text-sm leading-6 text-stone-600">Wipe clean after use with a soft, damp cloth. Let dry fully before storing. Avoid abrasive cleaners to preserve the matte finish.</p>
+            </details>
+            <details class="group py-4">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-6 text-sm font-medium">Shipping &amp; returns <span class="text-lg font-normal text-clay transition group-open:rotate-45" aria-hidden="true">+</span></summary>
+              <p class="max-w-lg pt-3 text-sm leading-6 text-stone-600">Complimentary standard shipping on orders over $60. You can review delivery options and the final total before placing your order.</p>
+            </details>
+          </section>
         </section>
       </div>
 
