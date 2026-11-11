@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Meet the MAOPAPA Cat and Westie clean-up bag designs, each $5.99 per box." />
+    <title>Clean-up Bags — MAOPAPA</title>
+    <!-- A static Tailwind page that can be previewed without a build step. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config={theme:{extend:{colors:{cream:'#F7F5F0',ink:'#292721',clay:'#A78267',oat:'#DED7CC',mist:'#ECE9E2'},fontFamily:{sans:['Inter','ui-sans-serif','system-ui','sans-serif']}}}};</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-cream font-sans text-ink antialiased">
+    <header class="border-b border-oat">
+      <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-5 sm:px-8 lg:px-12">
+        <a href="index.html" class="text-lg font-semibold tracking-[0.12em]">MAOPAPA</a>
+        <nav class="flex items-center gap-5 text-[10px] font-medium tracking-[0.1em] sm:gap-8 sm:text-xs" aria-label="Main navigation">
+          <a href="index.html#shop" class="hover:text-clay">SHOP</a>
+          <a href="index.html?bag=1#clean-up-bags" class="hover:text-clay">BAG <span id="bag-count" aria-live="polite">(0)</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="mx-auto max-w-7xl px-5 pb-12 pt-14 sm:px-8 sm:pt-20 lg:px-12">
+        <p class="text-[10px] font-medium tracking-[0.18em] text-clay">THE EVERYDAY CLEAN-UP EDIT</p>
+        <h1 class="mt-5 max-w-3xl text-4xl font-medium leading-[1.08] tracking-[-0.045em] sm:text-6xl">A little cleaner.<br />A lot more considered.</h1>
+        <p class="mt-6 max-w-2xl text-sm leading-7 text-stone-600 sm:text-base">Two pet-inspired peel-and-seal bag designs in a simple pull-out box. Choose the cat or Westie print; both are priced at $5.99 per box.</p>
+        <p class="mt-4 max-w-2xl text-xs leading-6 text-stone-500">Concept imagery. Final materials, dimensions, bag count, and performance are being confirmed.</p>
+      </section>
+
+      <!-- Both variants share one format and price, so the print is the only choice. -->
+      <section class="mx-auto grid max-w-7xl gap-8 px-5 pb-20 sm:px-8 lg:grid-cols-2 lg:gap-10 lg:px-12">
+        <article id="cat" class="scroll-mt-8 border border-oat bg-white/60">
+          <img class="aspect-[3/2] w-full bg-mist object-cover" src="assets/cleanup-cat.jpg" alt="Concept image of the MAOPAPA cat-print peel-and-seal clean-up bag beside a kraft-look pull-out box" width="1536" height="1024" />
+          <div class="p-6 sm:p-8">
+            <p class="text-[10px] font-medium tracking-[0.16em] text-clay">01 / CAT PRINT</p>
+            <div class="mt-3 flex items-start justify-between gap-4"><h2 class="text-2xl font-medium tracking-tight">Cat Clean-up Bags</h2><p class="whitespace-nowrap text-xl font-medium">$5.99</p></div>
+            <p class="mt-4 text-sm leading-7 text-stone-600">A playful cat illustration meets a quiet kraft-inspired palette. Pull a bag from the box, use it, then close its adhesive flap.</p>
+            <p class="mt-4 text-xs text-stone-500">Price per box · Peel-and-seal design</p>
+            <button class="add-to-bag mt-7 min-h-12 w-full bg-ink px-6 text-xs font-semibold tracking-[0.14em] text-white transition hover:bg-clay" type="button" data-product="Cat Clean-up Bags">ADD TO BAG — $5.99</button>
+          </div>
+        </article>
+
+        <article id="westie" class="scroll-mt-8 border border-oat bg-white/60">
+          <img class="aspect-[3/2] w-full bg-mist object-cover" src="assets/cleanup-westie.jpg" alt="Concept image of the MAOPAPA Westie-print peel-and-seal clean-up bag beside a kraft-look pull-out box" width="1536" height="1024" />
+          <div class="p-6 sm:p-8">
+            <p class="text-[10px] font-medium tracking-[0.16em] text-clay">02 / WESTIE PRINT</p>
+            <div class="mt-3 flex items-start justify-between gap-4"><h2 class="text-2xl font-medium tracking-tight">Westie Clean-up Bags</h2><p class="whitespace-nowrap text-xl font-medium">$5.99</p></div>
+            <p class="mt-4 text-sm leading-7 text-stone-600">Small West Highland Terrier faces in muted plum bring a little character to the same easy pull-out, peel-and-seal format.</p>
+            <p class="mt-4 text-xs text-stone-500">Price per box · Peel-and-seal design</p>
+            <button class="add-to-bag mt-7 min-h-12 w-full bg-ink px-6 text-xs font-semibold tracking-[0.14em] text-white transition hover:bg-clay" type="button" data-product="Westie Clean-up Bags">ADD TO BAG — $5.99</button>
+          </div>
+        </article>
+      </section>
+
+      <section class="border-t border-oat bg-mist/70 px-5 py-12 text-center sm:px-8">
+        <p class="mx-auto max-w-xl text-sm leading-7 text-stone-600">Your bag saves these selections on this device. Online checkout is not available yet.</p>
+        <a href="index.html?bag=1#clean-up-bags" class="mt-5 inline-flex min-h-11 items-center border-b border-ink text-xs font-semibold tracking-[0.12em]">VIEW YOUR BAG →</a>
+      </section>
+    </main>
+    <footer class="px-5 py-8 text-center text-xs text-stone-500">© 2026 MAOPAPA · Made for the life you share.</footer>
+    <p id="bag-message" class="pointer-events-none fixed bottom-5 left-1/2 hidden w-[calc(100%-2rem)] max-w-md -translate-x-1/2 bg-ink px-5 py-4 text-center text-xs text-white shadow-lg" role="status" aria-live="polite"></p>
+    <script>
+      // Keep the two detail-page variants in the same local bag as the home page.
+      const bagKey = 'maopapa-bag-v1';
+      const count = document.querySelector('#bag-count');
+      const message = document.querySelector('#bag-message');
+      const readBag = () => {
+        try {
+          const saved = JSON.parse(localStorage.getItem(bagKey) || '[]');
+          return Array.isArray(saved) ? saved.filter((item) => typeof item.name === 'string' && Number.isFinite(item.price) && item.price >= 0).slice(0, 99) : [];
+        } catch { return []; }
+      };
+      let bag = readBag();
+      const updateCount = () => { count.textContent = `(${bag.length})`; };
+      updateCount();
+      document.querySelectorAll('.add-to-bag').forEach((button) => button.addEventListener('click', () => {
+        bag = readBag();
+        bag.push({ name: button.dataset.product, price: 5.99 });
+        try { localStorage.setItem(bagKey, JSON.stringify(bag)); } catch { /* Private browsing may block storage. */ }
+        updateCount();
+        message.textContent = `${button.dataset.product} added to bag`;
+        message.classList.remove('hidden');
+        window.setTimeout(() => message.classList.add('hidden'), 2500);
+      }));
+    </script>
+  </body>
+</html>
