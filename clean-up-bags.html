@@ -108,6 +108,27 @@
         </div>
       </section>
 
+      <!-- Netlify detects this HTML form at deploy time; no client-side API key is needed. -->
+      <section id="interest" class="border-t border-oat bg-white/50">
+        <div class="mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:px-8 sm:py-20 lg:grid-cols-2 lg:gap-20 lg:px-12">
+          <div>
+            <p class="text-[10px] font-medium tracking-[0.18em] text-clay">BE FIRST TO KNOW</p>
+            <h2 class="mt-4 text-3xl font-medium tracking-[-0.04em] sm:text-4xl">Tell us which one feels like yours.</h2>
+            <p class="mt-5 max-w-lg text-sm leading-7 text-stone-600">These designs are still being sampled. Register your interest for the UAE or Saudi Arabia, and we will share an update when product details and availability are confirmed.</p>
+            <p class="mt-4 text-xs leading-6 text-stone-500">No payment is collected. This is not a reservation or a preorder.</p>
+          </div>
+          <form name="maopapa-interest" method="POST" action="/interest-thanks.html" data-netlify="true" netlify-honeypot="bot-field" class="space-y-5 border border-oat bg-cream p-6 sm:p-8">
+            <input type="hidden" name="form-name" value="maopapa-interest" />
+            <p class="hidden"><label>Leave this field empty: <input name="bot-field" /></label></p>
+            <div><label for="interest-email" class="mb-2 block text-xs font-medium">Email address</label><input id="interest-email" name="email" type="email" autocomplete="email" required maxlength="254" class="min-h-12 w-full border border-oat bg-white px-4 text-sm outline-none focus:border-clay" placeholder="you@example.com" /></div>
+            <div><label for="interest-country" class="mb-2 block text-xs font-medium">Where are you based?</label><select id="interest-country" name="country" required class="min-h-12 w-full border border-oat bg-white px-4 text-sm outline-none focus:border-clay"><option value="" selected disabled>Select a country</option><option value="UAE">United Arab Emirates</option><option value="Saudi Arabia">Saudi Arabia</option></select></div>
+            <div><label for="interest-print" class="mb-2 block text-xs font-medium">Preferred print</label><select id="interest-print" name="print" required class="min-h-12 w-full border border-oat bg-white px-4 text-sm outline-none focus:border-clay"><option value="" selected disabled>Select a print</option><option value="Cat">Cat</option><option value="Westie">Westie</option><option value="Both">Both</option></select></div>
+            <label class="flex gap-3 text-xs leading-5 text-stone-600"><input name="email-consent" type="checkbox" value="yes" required class="mt-1 accent-[#292721]" /><span>I agree to receive email updates about these MAOPAPA designs. I can opt out by replying to any update.</span></label>
+            <button type="submit" class="min-h-12 w-full bg-ink px-6 text-xs font-semibold tracking-[0.14em] text-white transition hover:bg-clay">REGISTER INTEREST</button>
+          </form>
+        </div>
+      </section>
+
       <section class="border-t border-oat bg-mist/70 px-5 py-12 text-center sm:px-8">
         <p class="mx-auto max-w-xl text-sm leading-7 text-stone-600">Your bag saves these selections on this device. Online checkout is not available yet.</p>
         <a href="index.html?bag=1#clean-up-bags" class="mt-5 inline-flex min-h-11 items-center border-b border-ink text-xs font-semibold tracking-[0.12em]">VIEW YOUR BAG →</a>
