@@ -9,8 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>tailwind.config={theme:{extend:{fontFamily:{sans:['Inter','sans-serif']},colors:{ink:'#282521',oat:'#F5F2EC',clay:'#8A725B',mist:'#DED8CF'}}}};</script>
-  </head>
-  <body class="bg-oat font-sans text-ink antialiased">
+  <link rel="stylesheet" href="site-footer.css" />
+</head>
+  <body id="page-top" class="bg-oat font-sans text-ink antialiased">
     <header class="border-b border-stone-300/70"><div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5 lg:px-8"><a href="index.html" class="text-lg font-semibold tracking-[0.18em]">MAOPAPA</a><nav class="hidden gap-7 text-sm text-stone-600 md:flex" aria-label="Main navigation"><a href="essentials.html" class="hover:text-ink">Essentials</a><a href="journal.html" class="text-ink">Journal</a><a href="about.html" class="hover:text-ink">Our story</a><a href="faq.html" class="hover:text-ink">FAQ</a></nav><a href="essentials.html" class="text-sm font-medium underline decoration-stone-400 underline-offset-4">Shop</a></div></header>
 
     <main>
@@ -43,7 +44,29 @@
 
       <section class="border-y border-stone-300/70 bg-white/40"><div class="mx-auto flex max-w-5xl flex-col gap-7 px-6 py-12 sm:flex-row sm:items-center sm:justify-between"><div><p class="text-xs font-semibold uppercase tracking-[0.18em] text-clay">From the feeding edit</p><h2 class="mt-2 text-2xl font-semibold tracking-tight">Objects for the everyday ritual.</h2></div><div class="flex gap-3"><a href="purrpress-bloom.html" class="rounded-full bg-ink px-5 py-3 text-sm font-medium text-white hover:bg-stone-700">PurrPress Bloom™</a><a href="essentials.html" class="rounded-full border border-stone-400 px-5 py-3 text-sm font-medium hover:bg-white">View essentials</a></div></div></section>
     </main>
-    <footer class="mx-auto flex max-w-6xl justify-between px-6 py-8 text-xs text-stone-500 lg:px-8"><span>© 2026 Maopapa</span><a href="journal.html" class="hover:text-ink">More journal notes</a></footer>
+<!-- MAOPAPA shared footer: update this block consistently across storefront pages. -->
+<footer class="mp-footer" id="site-footer" aria-label="MAOPAPA information and social links">
+  <div class="mp-footer-inner">
+    <div class="mp-footer-community">
+      <div><p class="mp-eyebrow">THE MAOPAPA COMMUNITY</p><h2>A little closer.<br>A lot more paws.</h2><p class="mp-footer-intro">Everyday moments, new ideas, and the things we make for a life shared with pets.</p></div>
+      <div class="mp-social-block"><h3>FOLLOW ALONG</h3><div class="mp-social-grid">
+        <a href="https://www.instagram.com/halomeowpals?igsh=ZnJjdHllZnRqZmF4&amp;utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="MAOPAPA on Instagram (opens in a new tab)"><span class="mp-social-symbol" aria-hidden="true">◎</span><span>Instagram</span><span aria-hidden="true">↗</span></a>
+        <a href="https://www.threads.com/@halomeowpals?igshid=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener noreferrer" aria-label="MAOPAPA on Threads (opens in a new tab)"><span class="mp-social-symbol" aria-hidden="true">@</span><span>Threads</span><span aria-hidden="true">↗</span></a>
+        <a href="https://www.youtube.com/@Maopapa.Official" target="_blank" rel="noopener noreferrer" aria-label="MAOPAPA on YouTube (opens in a new tab)"><span class="mp-social-symbol" aria-hidden="true">▷</span><span>YouTube</span><span aria-hidden="true">↗</span></a>
+        <div class="mp-social-pending"><span class="mp-social-symbol" aria-hidden="true">K</span><span>Kickstarter<small>LINK COMING SOON</small></span><span aria-hidden="true">—</span></div>
+      </div><p class="mp-social-note">Meet us where you feel at home.</p></div>
+    </div>
+    <div class="mp-footer-directory">
+      <div class="mp-footer-brand"><a href="index.html" class="mp-wordmark">MAOPAPA</a><p>Everyday care,<br>beautifully considered.</p><span class="mp-origin">SUZHOU, CHINA · MADE FOR LIFE WITH PAWS</span></div>
+      <nav aria-label="Footer shop"><h3>EXPLORE</h3><a href="essentials.html">Everyday essentials</a><a href="design-collection.html">The design collection</a><a href="index.html#new-designs">Latest designs</a><a href="clean-up-bags.html">Clean-up bags</a><a href="purrpress-bloom.html">PurrPress Bloom™</a></nav>
+      <nav aria-label="Footer brand"><h3>OUR WORLD</h3><a href="about.html">Our story</a><a href="journal.html">The journal</a><a href="feeding-ritual.html">Everyday rituals</a><a href="design-collection.html">Ideas in the making</a></nav>
+      <nav aria-label="Footer support"><h3>HERE TO HELP</h3><a href="faq.html">Frequently asked questions</a><a href="order-guide.html">Ordering guide</a><a href="https://www.instagram.com/halomeowpals" target="_blank" rel="noopener noreferrer">Find us on Instagram ↗</a><p class="mp-help-note">For product availability and ordering information, start with our guide.</p></nav>
+    </div>
+    <div class="mp-footer-bottom"><p>© 2026 MAOPAPA. All rights reserved.<span lang="zh-CN">猫趴趴（苏州）宠物用品科技有限公司</span></p><a href="#page-top">BACK TO TOP <span aria-hidden="true">↑</span></a></div>
+  </div>
+</footer>
+
+    
     <script>
       // Keeps in-page navigation readable by highlighting the matching topic as it enters view.
       const links = document.querySelectorAll('aside a');

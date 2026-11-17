@@ -35,8 +35,9 @@
       .hero-slide { opacity: 0; pointer-events: none; transition: opacity 700ms ease; }
       .hero-slide.is-active { opacity: 1; pointer-events: auto; }
     </style>
-  </head>
-  <body class="bg-cream font-sans text-ink antialiased">
+  <link rel="stylesheet" href="site-footer.css" />
+</head>
+  <body id="page-top" class="bg-cream font-sans text-ink antialiased">
     <!-- Announcement bar -->
     <p class="bg-ink px-4 py-2 text-center text-[10px] font-medium tracking-[0.16em] text-white sm:text-xs">
       COMPLIMENTARY SHIPPING ON ORDERS OVER $75
@@ -47,13 +48,13 @@
 
       <nav class="hidden items-center gap-8 text-xs font-medium tracking-[0.09em] md:flex" aria-label="Main navigation">
         <a class="transition hover:text-clay" href="#shop">SHOP</a>
-        <a class="transition hover:text-clay" href="clean-up-bags.html">CLEAN-UP BAGS</a>
-        <a class="transition hover:text-clay" href="#our-story">OUR STORY</a>
-        <a class="transition hover:text-clay" href="#journal">JOURNAL</a>
+        <a class="transition hover:text-clay" href="design-collection.html">DESIGN COLLECTION</a>
+        <a class="transition hover:text-clay" href="about.html">OUR STORY</a>
+        <a class="transition hover:text-clay" href="journal.html">JOURNAL</a>
       </nav>
 
       <div class="flex items-center gap-4">
-        <button class="hidden text-xs font-medium tracking-[0.08em] transition hover:text-clay sm:block" type="button">SEARCH</button>
+        <a class="hidden text-xs font-medium tracking-[0.08em] transition hover:text-clay sm:block" href="#site-footer">COMMUNITY</a>
         <button id="bag-button" class="text-xs font-medium tracking-[0.08em] transition hover:text-clay" type="button" aria-expanded="false" aria-controls="bag-drawer">BAG <span id="bag-count" aria-live="polite">(0)</span></button>
         <!-- Mobile menu uses a generous, touch-friendly trigger rather than desktop links squeezed into a narrow header. -->
         <button id="menu-button" class="grid h-12 w-12 place-items-center md:hidden" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
@@ -65,7 +66,7 @@
     <!-- Module 07: focused mobile navigation. Only high-intent destinations appear before brand content. -->
     <nav id="mobile-menu" class="hidden border-y border-oat bg-cream px-5 py-6 md:hidden" aria-label="Mobile navigation">
       <div class="mx-auto max-w-7xl">
-        <div class="flex flex-col border-t border-oat">
+        <div class="flex flex-col border-t border-oat"><a data-menu-link href="design-collection.html" class="flex min-h-12 items-center justify-between border-b border-oat py-3 text-sm font-medium">DESIGN COLLECTION <span aria-hidden="true">→</span></a>
           <a data-menu-link href="essentials.html" class="flex min-h-12 items-center justify-between border-b border-oat py-3 text-sm font-medium">SHOP ESSENTIALS <span aria-hidden="true">→</span></a>
           <a data-menu-link href="clean-up-bags.html" class="flex min-h-12 items-center justify-between border-b border-oat py-3 text-sm font-medium">CLEAN-UP BAGS <span aria-hidden="true">→</span></a>
           <a data-menu-link href="purrpress-bloom.html" class="flex min-h-12 items-center justify-between border-b border-oat py-3 text-sm font-medium">FEATURED: PURRPRESS BLOOM™ <span aria-hidden="true">→</span></a>
@@ -194,6 +195,28 @@
         </div>
       </section>
     </main>
+<!-- MAOPAPA shared footer: update this block consistently across storefront pages. -->
+<footer class="mp-footer" id="site-footer" aria-label="MAOPAPA information and social links">
+  <div class="mp-footer-inner">
+    <div class="mp-footer-community">
+      <div><p class="mp-eyebrow">THE MAOPAPA COMMUNITY</p><h2>A little closer.<br>A lot more paws.</h2><p class="mp-footer-intro">Everyday moments, new ideas, and the things we make for a life shared with pets.</p></div>
+      <div class="mp-social-block"><h3>FOLLOW ALONG</h3><div class="mp-social-grid">
+        <a href="https://www.instagram.com/halomeowpals?igsh=ZnJjdHllZnRqZmF4&amp;utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="MAOPAPA on Instagram (opens in a new tab)"><span class="mp-social-symbol" aria-hidden="true">◎</span><span>Instagram</span><span aria-hidden="true">↗</span></a>
+        <a href="https://www.threads.com/@halomeowpals?igshid=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener noreferrer" aria-label="MAOPAPA on Threads (opens in a new tab)"><span class="mp-social-symbol" aria-hidden="true">@</span><span>Threads</span><span aria-hidden="true">↗</span></a>
+        <a href="https://www.youtube.com/@Maopapa.Official" target="_blank" rel="noopener noreferrer" aria-label="MAOPAPA on YouTube (opens in a new tab)"><span class="mp-social-symbol" aria-hidden="true">▷</span><span>YouTube</span><span aria-hidden="true">↗</span></a>
+        <div class="mp-social-pending"><span class="mp-social-symbol" aria-hidden="true">K</span><span>Kickstarter<small>LINK COMING SOON</small></span><span aria-hidden="true">—</span></div>
+      </div><p class="mp-social-note">Meet us where you feel at home.</p></div>
+    </div>
+    <div class="mp-footer-directory">
+      <div class="mp-footer-brand"><a href="index.html" class="mp-wordmark">MAOPAPA</a><p>Everyday care,<br>beautifully considered.</p><span class="mp-origin">SUZHOU, CHINA · MADE FOR LIFE WITH PAWS</span></div>
+      <nav aria-label="Footer shop"><h3>EXPLORE</h3><a href="essentials.html">Everyday essentials</a><a href="design-collection.html">The design collection</a><a href="index.html#new-designs">Latest designs</a><a href="clean-up-bags.html">Clean-up bags</a><a href="purrpress-bloom.html">PurrPress Bloom™</a></nav>
+      <nav aria-label="Footer brand"><h3>OUR WORLD</h3><a href="about.html">Our story</a><a href="journal.html">The journal</a><a href="feeding-ritual.html">Everyday rituals</a><a href="design-collection.html">Ideas in the making</a></nav>
+      <nav aria-label="Footer support"><h3>HERE TO HELP</h3><a href="faq.html">Frequently asked questions</a><a href="order-guide.html">Ordering guide</a><a href="https://www.instagram.com/halomeowpals" target="_blank" rel="noopener noreferrer">Find us on Instagram ↗</a><p class="mp-help-note">For product availability and ordering information, start with our guide.</p></nav>
+    </div>
+    <div class="mp-footer-bottom"><p>© 2026 MAOPAPA. All rights reserved.<span lang="zh-CN">猫趴趴（苏州）宠物用品科技有限公司</span></p><a href="#page-top">BACK TO TOP <span aria-hidden="true">↑</span></a></div>
+  </div>
+</footer>
+
 
     <!-- Module 03: slide-in shopping bag. It is intentionally checkout-free for this focused daily increment. -->
     <div id="bag-overlay" class="fixed inset-0 z-20 hidden bg-ink/30" aria-hidden="true"></div>

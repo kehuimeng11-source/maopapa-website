@@ -11,8 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  </head>
-  <body class="bg-cream font-sans text-ink antialiased">
+  <link rel="stylesheet" href="site-footer.css" />
+</head>
+  <body id="page-top" class="bg-cream font-sans text-ink antialiased">
     <header class="border-b border-oat">
       <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-5 sm:px-8 lg:px-12">
         <a href="index.html" class="text-lg font-semibold tracking-[0.12em]">MAOPAPA</a>
@@ -134,7 +135,29 @@
         <a href="index.html?bag=1#clean-up-bags" class="mt-5 inline-flex min-h-11 items-center border-b border-ink text-xs font-semibold tracking-[0.12em]">VIEW YOUR BAG →</a>
       </section>
     </main>
-    <footer class="px-5 py-8 text-center text-xs text-stone-500">© 2026 MAOPAPA · Made for the life you share.</footer>
+<!-- MAOPAPA shared footer: update this block consistently across storefront pages. -->
+<footer class="mp-footer" id="site-footer" aria-label="MAOPAPA information and social links">
+  <div class="mp-footer-inner">
+    <div class="mp-footer-community">
+      <div><p class="mp-eyebrow">THE MAOPAPA COMMUNITY</p><h2>A little closer.<br>A lot more paws.</h2><p class="mp-footer-intro">Everyday moments, new ideas, and the things we make for a life shared with pets.</p></div>
+      <div class="mp-social-block"><h3>FOLLOW ALONG</h3><div class="mp-social-grid">
+        <a href="https://www.instagram.com/halomeowpals?igsh=ZnJjdHllZnRqZmF4&amp;utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="MAOPAPA on Instagram (opens in a new tab)"><span class="mp-social-symbol" aria-hidden="true">◎</span><span>Instagram</span><span aria-hidden="true">↗</span></a>
+        <a href="https://www.threads.com/@halomeowpals?igshid=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener noreferrer" aria-label="MAOPAPA on Threads (opens in a new tab)"><span class="mp-social-symbol" aria-hidden="true">@</span><span>Threads</span><span aria-hidden="true">↗</span></a>
+        <a href="https://www.youtube.com/@Maopapa.Official" target="_blank" rel="noopener noreferrer" aria-label="MAOPAPA on YouTube (opens in a new tab)"><span class="mp-social-symbol" aria-hidden="true">▷</span><span>YouTube</span><span aria-hidden="true">↗</span></a>
+        <div class="mp-social-pending"><span class="mp-social-symbol" aria-hidden="true">K</span><span>Kickstarter<small>LINK COMING SOON</small></span><span aria-hidden="true">—</span></div>
+      </div><p class="mp-social-note">Meet us where you feel at home.</p></div>
+    </div>
+    <div class="mp-footer-directory">
+      <div class="mp-footer-brand"><a href="index.html" class="mp-wordmark">MAOPAPA</a><p>Everyday care,<br>beautifully considered.</p><span class="mp-origin">SUZHOU, CHINA · MADE FOR LIFE WITH PAWS</span></div>
+      <nav aria-label="Footer shop"><h3>EXPLORE</h3><a href="essentials.html">Everyday essentials</a><a href="design-collection.html">The design collection</a><a href="index.html#new-designs">Latest designs</a><a href="clean-up-bags.html">Clean-up bags</a><a href="purrpress-bloom.html">PurrPress Bloom™</a></nav>
+      <nav aria-label="Footer brand"><h3>OUR WORLD</h3><a href="about.html">Our story</a><a href="journal.html">The journal</a><a href="feeding-ritual.html">Everyday rituals</a><a href="design-collection.html">Ideas in the making</a></nav>
+      <nav aria-label="Footer support"><h3>HERE TO HELP</h3><a href="faq.html">Frequently asked questions</a><a href="order-guide.html">Ordering guide</a><a href="https://www.instagram.com/halomeowpals" target="_blank" rel="noopener noreferrer">Find us on Instagram ↗</a><p class="mp-help-note">For product availability and ordering information, start with our guide.</p></nav>
+    </div>
+    <div class="mp-footer-bottom"><p>© 2026 MAOPAPA. All rights reserved.<span lang="zh-CN">猫趴趴（苏州）宠物用品科技有限公司</span></p><a href="#page-top">BACK TO TOP <span aria-hidden="true">↑</span></a></div>
+  </div>
+</footer>
+
+    
     <p id="bag-message" class="pointer-events-none fixed bottom-5 left-1/2 hidden w-[calc(100%-2rem)] max-w-md -translate-x-1/2 bg-ink px-5 py-4 text-center text-xs text-white shadow-lg" role="status" aria-live="polite"></p>
     <script>
       // Keep the two detail-page variants in the same local bag as the home page.
