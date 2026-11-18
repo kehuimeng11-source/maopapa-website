@@ -17,23 +17,14 @@
       <section class="order-2 lg:order-1">
         <p class="text-xs font-semibold uppercase tracking-[0.2em] text-clay">The Maopapa letter</p>
         <h1 class="mt-5 max-w-lg text-4xl font-semibold leading-[1.08] tracking-tight sm:text-6xl">A quieter note for life with paws.</h1>
-        <p class="mt-6 max-w-md text-base leading-7 text-stone-600">Join for small rituals, fresh Journal notes, and early looks at thoughtfully made essentials. No rush, no noise.</p>
+        <p class="mt-6 max-w-md text-base leading-7 text-stone-600">Follow our social channels for small rituals, fresh Journal notes, and early looks at our designs.</p>
         <div class="mt-10 grid max-w-md gap-5 border-t border-stone-300/80 pt-7 sm:grid-cols-3 sm:gap-3">
-          <div><p class="text-xs font-semibold uppercase tracking-[0.16em] text-clay">01</p><p class="mt-2 text-sm leading-5">Useful pet care notes</p></div><div><p class="text-xs font-semibold uppercase tracking-[0.16em] text-clay">02</p><p class="mt-2 text-sm leading-5">First look at new objects</p></div><div><p class="text-xs font-semibold uppercase tracking-[0.16em] text-clay">03</p><p class="mt-2 text-sm leading-5">A welcome thank-you</p></div>
+          <div><p class="text-xs font-semibold uppercase tracking-[0.16em] text-clay">01</p><p class="mt-2 text-sm leading-5">Useful pet care notes</p></div><div><p class="text-xs font-semibold uppercase tracking-[0.16em] text-clay">02</p><p class="mt-2 text-sm leading-5">First look at new objects</p></div><div><p class="text-xs font-semibold uppercase tracking-[0.16em] text-clay">03</p><p class="mt-2 text-sm leading-5">Behind-the-scenes stories</p></div>
         </div>
       </section>
       <section class="order-1 bg-mist p-7 sm:p-10 lg:order-2 lg:p-12">
         <!-- Minimal email capture: one field, explicit consent, then a clear confirmation state. -->
-        <form id="letter-form" novalidate>
-          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-clay">Stay close</p>
-          <h2 class="mt-3 text-2xl font-semibold tracking-tight">Receive the next note.</h2>
-          <label class="mt-8 block text-sm font-medium" for="email">Email address</label>
-          <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" class="mt-2 min-h-12 w-full border border-stone-400 bg-oat px-4 text-base outline-none transition placeholder:text-stone-400 focus:border-ink" />
-          <label class="mt-5 flex cursor-pointer items-start gap-3 text-xs leading-5 text-stone-600"><input id="consent" type="checkbox" required class="mt-0.5 h-4 w-4 accent-ink" /><span>I’d like to receive Maopapa emails about care notes and product news. I can unsubscribe anytime.</span></label>
-          <button class="mt-7 min-h-12 w-full bg-ink px-5 text-sm font-medium text-white transition hover:bg-stone-700" type="submit">Join the letter</button>
-          <p id="form-message" class="mt-4 hidden text-sm leading-6" role="status"></p>
-          <p class="mt-5 text-[11px] leading-5 text-stone-500">By joining, you agree to receive marketing emails. We will confirm your subscription by email before sending the first note.</p>
-        </form>
+        <div><p class="text-xs font-semibold uppercase tracking-[0.18em] text-clay">Stay close</p><h2 class="mt-3 text-2xl font-semibold tracking-tight">Follow our next chapter.</h2><p class="mt-6 text-sm leading-6">Email signup is not available yet. Follow our social channels for updates.</p><a href="#site-footer" class="mt-7 inline-block border-b border-ink pb-2 text-sm font-medium">Explore our community →</a></div>
       </section>
     </main>
 <!-- MAOPAPA shared footer: update this block consistently across storefront pages. -->
@@ -58,20 +49,7 @@
   </div>
 </footer>
 
-    
-    <script>
-      // Demo-only confirmation state. Connect this form to Shopify Forms or an ESP before production use.
-      const form = document.getElementById('letter-form');
-      const message = document.getElementById('form-message');
-      form.addEventListener('submit', (event) => {
-        event.preventDefault();
-        const email = document.getElementById('email');
-        const consent = document.getElementById('consent');
-        const valid = email.validity.valid && consent.checked;
-        message.classList.remove('hidden', 'text-clay', 'text-stone-600');
-        if (!valid) { message.textContent = 'Please enter a valid email address and confirm your preference.'; message.classList.add('text-clay'); return; }
-        form.reset(); message.textContent = 'Thank you — please check your inbox to confirm your subscription.'; message.classList.add('text-stone-600');
-      });
-    </script>
+
+
   </body>
 </html>
